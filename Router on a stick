@@ -1,3 +1,17 @@
-<h3><b>Router on a Stick</b></h3>
-<h4>Steps:</h4>
-<ul>In the lab, I've assigned the ip address as shown in image<ul>
+Router on a Stick
+
+In IOU1:
+1. In interface e2/0-1, vlan 10 has been assigned(i.e by switchport access vlan 10)
+2. In interface e1/0-1, vlan 30 has been assigned(i.e by switchport access vlan 30)
+3. In interface e0/0, trunk port has been established(i.e by switchport mode trunk)
+
+In IOU2:
+1. In interface e0/2, vlan 10 has been assigned(i.e by switchport access vlan 10)
+2. In interface e0/3, vlan 30 has been assigned(i.e by switchport access vlan 30)
+3. In interface e0/0, trunk port has been established(i.e by switchport mode trunk)
+4. In interface e3/0, trunk port has been established(i.e by switchport mode trunk)
+
+In R1:
+1. In interface f0/0 subinterface has been created as f0/0.10, f0/0.20, f0/0.30 for vlan 10,20,30 respectively
+2. In sub-interface f0/0.10, gateway ip for vlan 10 has been assigned(i.e ip address 10.0.0.6
+
